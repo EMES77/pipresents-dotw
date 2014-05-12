@@ -31,6 +31,7 @@ prepare a USB-Stick with the following file-structure
 >>>folder "pp_profiles"
 >>>>folder "pp_loop"
 >>>>>file ""pp_showlist"
+
 >file "loopmaster.sh"
 
 - for each day of the week place a .mov and/or .jpg file with naming conditions as follows in the root of the USB-Stick
