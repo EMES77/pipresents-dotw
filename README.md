@@ -1,7 +1,7 @@
 #pipresents - day of the week - script
 ===============
 
-This shell script is a workaraound to make KenT2's "pipresents-next" aware of the day of the week.
+This is a small shell script as a workaraound to make KenT2's "pipresents-next" aware of the day of the week.
 It's made for the Raspberry Pi
 
 
