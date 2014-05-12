@@ -25,6 +25,7 @@ sudo apt-get install usbmount
 
 prepare a USB-Stick with the following file-structure
 >folder "intro" - for mediafiles to run on each loop of the show
+
 >folder "skripte" 
 >>folder "pp_home"
 >>>folder "pp_profiles"
