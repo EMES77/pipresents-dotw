@@ -23,7 +23,8 @@ make USB-Sticks be mounted as "/media/usb"
 sudo apt-get install usbmount
 ```
 
-prepare a USB-Stick with the following file-structure
+copy the files from the folder usb-device to an empty USB-Stick
+ehich will then contain the following file-structure
 >folder "intro" - for mediafiles to run on each loop of the show
 
 >folder "skripte" 
