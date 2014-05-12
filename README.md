@@ -30,7 +30,7 @@ prepare a USB-Stick with the following file-structure
 >>folder "pp_home"
 >>>folder "pp_profiles"
 >>>>folder "pp_loop"
->>>>>file ""pp_showlist"
+>>>>>file ""pp_showlist.json"
 
 >>file "loopmaster.sh"
 
