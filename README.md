@@ -1,12 +1,12 @@
-#pipresents-dotw
+#pipresents - day of the week - script
 ===============
 
 This shell script is a workaraound to make KenT2's "pipresents-next" aware of the day of the week.
 It's made for the Raspberry Pi
 
 
-I suppose you already have a Raspberry Pi set up and Pi Presents up and running 
-and also set it up as Black-Box according to the Pi Presents-manual
+I suppose you already have a Raspberry Pi set up and Pi Presents-next up and running 
+and also set it up as Black-Box according to the Pi Presents-Manual
 https://github.com/KenT2/pipresents-next
 
 To make it work your Raspberry will need a permanent internet-connection to get the time from a server
@@ -36,23 +36,24 @@ prepare a USB-Stick with the following file-structure
 
 - for each day of the week place a .mov and/or .jpg file with naming conditions as follows in the root of the USB-Stick
 
-...The script checks the day of the week it is
+...The script checks the day of the week
 
-the weekdays are names 1-7 starting on Monday
-	
-- ...and which time it is (current periods in the script)
+- the weekdays are named 1-7 starting on Monday
+ 
+...and which time it is (current periods in the script)
+
 - _morgens (morning) (after 6:00h) 
 - _mittags (noon) (between 11:00h and 15:00h) 
 - _abends (evening) (between 15:00h and 22:00h) or
 - _nachts (night) (between 22:00h and 06:00)
 	
-so for example the monday-morning files are called
--> "1_morgens.mov" and the picture "1_morgens.jpg"
+for example the monday-morning files are called
+- "1_morgens.mov" and the picture "1_morgens.jpg"
 	
 thuesday noon would be
--> "2_mittags.mov"
+- "2_mittags.mov"
 
-###call the script on boot
+###call the script when your Pi boots
 type in terminal
 ```
 sudo nano /etc/xdg/lxsession/LXDE/autostart
@@ -64,7 +65,7 @@ add the following line at the bottom of the file
 
 close file with CTRL X - confirm saving changes
 
-###set-up cron
+###set-up crontab
 type in terminal
 ```
 sudo nano /etc/crontab
