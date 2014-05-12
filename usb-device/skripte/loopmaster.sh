@@ -343,11 +343,14 @@ if [ -f $infilevideo ]
  echo '   "track-text-y": "200",'>>$profildatei
  echo '   "type": "video"'>>$profildatei
 fi
+if [-f $infilevideo] && [-f $infilebild]
+ then
+ echo '  },'>>$profildatei
+fi
 if [! -f $infilebild ]
  then
  echo '  }'>>$profildatei
 else
- echo '  },'>>$profildatei
  echo '  {'>>$profildatei
  echo '   "animate-begin": "",'>>$profildatei
  echo '   "animate-clear": "no",'>>$profildatei
