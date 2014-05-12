@@ -24,7 +24,7 @@ sudo apt-get install usbmount
 ```
 
 copy the files from the folder usb-device to an empty USB-Stick
-ehich will then contain the following file-structure
+which will then contain the following file-structure
 >folder "intro" - for mediafiles to run on each loop of the show
 
 >folder "skripte" 
