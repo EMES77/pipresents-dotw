@@ -343,14 +343,42 @@ if [ -f $infilevideo ]
  echo '   "track-text-y": "200",'>>$profildatei
  echo '   "type": "video"'>>$profildatei
 fi
-if [-f $infilevideo] && [-f $infilebild]
- then
- echo '  },'>>$profildatei
-fi
-if [! -f $infilebild ]
+if [ -f $infilevideo ] && [ ! -f $infilebild ]
  then
  echo '  }'>>$profildatei
-else
+fi
+if [ -f $infilevideo ] && [ -f $infilebild ]
+ then
+ echo '  },'>>$profildatei
+ echo '  {'>>$profildatei
+ echo '   "animate-begin": "",'>>$profildatei
+ echo '   "animate-clear": "no",'>>$profildatei
+ echo '   "animate-end": "",'>>$profildatei
+ echo '   "background-colour": "",'>>$profildatei
+ echo '   "background-image": "",'>>$profildatei
+ echo '   "display-show-background": "yes",'>>$profildatei
+ echo '   "display-show-text": "no",'>>$profildatei
+ echo '   "image-window": "",'>>$profildatei
+ echo '   "links": "",'>>$profildatei
+ echo '   "plugin": "",'>>$profildatei
+ echo '   "show-control-begin": "",'>>$profildatei
+ echo '   "show-control-end": "",'>>$profildatei
+ echo '   "thumbnail": "",'>>$profildatei
+ echo '   "duration": "'$duration'",'>>$profildatei
+ echo '   "location": "'$infilebild'",'>>$profildatei
+ echo '   "title": "bild",'>>$profildatei
+ echo '   "track-ref": "",'>>$profildatei
+ echo '   "track-text": "",'>>$profildatei 
+ echo '   "track-text-colour": "",'>>$profildatei
+ echo '   "track-text-font": "",'>>$profildatei
+ echo '   "track-text-x": "1000",'>>$profildatei
+ echo '   "track-text-y": "200",'>>$profildatei
+ echo '   "transition": "cut",'>>$profildatei
+ echo '   "type": "image"'>>$profildatei
+ echo '  }'>>$profildatei
+fi
+if [ ! -f $infilevideo ] && [ -f $infilebild ]
+ then
  echo '  {'>>$profildatei
  echo '   "animate-begin": "",'>>$profildatei
  echo '   "animate-clear": "no",'>>$profildatei
