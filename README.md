@@ -35,7 +35,16 @@ which will then contain the following file-structure
 
 >>file "loopmaster.sh"
 
-- for each day of the week place a .mov and/or .jpg file with naming conditions as follows in the root of the USB-Stick
+the current bash-script "loopmaster.sh" --> found in folder "skripte" <-- writes a file called "media.json" to the folder "pp_loop".
+currently the script creates a pipresents-show as described below. If you want the show to be different, please refer to the manual of pipresents and change make "loopmaster.sh" write the json-file as you need it.
+
+This is the current format of the created show:
+- in the "intro"-folder you can place as many image- and videofiles with whatever filename in a format that pipresents-next can display. They'll be recognized by the script and written to media.json. These files will run at the beginning of each loop of the show regardless of day and time.
+- for each day of the week (and defined time of day) place one ore none .mp4 and/or one or none .jpg file with naming conditions as follows in the root of the USB-Stick. These files will show in each loop of the show according to the defined day of the week and time of the day.
+
+I hope this is understandable ;-)
+
+Naming-Conditions for the mediafiles (sorry for the english/german mixup ;):
 
 ...The script checks the day of the week
 
@@ -49,10 +58,10 @@ which will then contain the following file-structure
 - _nachts (night) (between 22:00h and 06:00)
 	
 for example the monday-morning files are called
-- "1_morgens.mov" and the picture "1_morgens.jpg"
+- "1_morgens.mp4" and the picture "1_morgens.jpg"
 	
 thuesday noon would be
-- "2_mittags.mov"
+- "2_mittags.mp4"
 
 ###call the script when your Pi boots
 type in terminal
