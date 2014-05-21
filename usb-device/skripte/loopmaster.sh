@@ -42,7 +42,7 @@ mediapath="/media/usb/"
 #path for files that should run in every show, like logo, intro etc
 additionalspath="/media/usb/intro/"
 #this is the suffix for the Main-Video! Filetypes in additionalspath do not matter. Change e.g. to .mp4 if you want to run .mp4
-pp_videosuffix=".mov"
+pp_videosuffix=".mp4"
 #same here, change e.g. to .png if needed
 bildsuffix=".jpg"
 #path to the pipresents profile
